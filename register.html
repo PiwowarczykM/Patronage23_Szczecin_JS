@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="MPiwowarczyk">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <script async src="scripts/register.js"></script>
+</head>
+<body>
+    <main>
+        <form class="container">
+            <div class="inputGroup">
+                <label for="username">Nazwa użytkownika: </label>
+                <input type="text" id="username" name="username" required placeholder="Mike Wazowski" oninput="customUsernameValidation(this)" oninvalid="customUsernameValidation(this)">
+            </div>
+            <div class="inputGroup">
+                <label for="password">Hasło: </label>
+                <input type="password" id="password" name="password" required oninput="customPasswordValidation(this)" oninvalid="customPasswordValidation(this)">
+            </div>
+            <div class="inputGroup">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required placeholder="mwazowski@gmail.com" oninvalid="customEmailValidation(this)" oninput="customEmailValidation(this)">
+            </div>
+            <div class="inputGroup">
+                <label for="confirmEmail">Potwierdź email: </label>
+                <input type="email" id="confirmEmail" required oninvalid="customConfirmEmailValidation(this)" oninput="customConfirmEmailValidation(this)">
+            </div>
+            <p id="form-validation" style = "display: none;">Nazwa użytkownika lub email zostały już wykorzystane</p>
+            <button id="submit">Zarejestruj</button>
+        </form>
+    </main>
+</body>
+</html>
+

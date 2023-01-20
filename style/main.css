@@ -1,0 +1,121 @@
+body{
+    font-family: "Open Sans";
+}
+
+button{
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid black;
+
+}
+button:hover{
+    background-color: rgb(150, 150, 150);
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    background-color: rgb(84, 84, 84);
+    color: rgb(150, 150, 150);
+}
+
+label{
+    display: inline-block;
+    text-align: right;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#form-validation{
+    color: rgb(211, 20, 20);
+}
+
+/*header*/
+.header{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    height: 30px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#accountHeader{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    height: 30px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    padding: 20px;
+}
+
+
+/*main*/
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    border: 1px solid;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: fit-content;
+}
+
+#containerHomepage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: fit-content;
+}
+
+/*charts*/
+
+.chartsContainer{
+    position: relative;
+    display: flex;
+}
+
+/*table*/
+
+table{
+    background-color: lightgray;
+    width: 550px;
+}
+td{
+    width: 110px;
+    background-color: rgb(253, 244, 231);
+    text-align: center;
+}
+th{
+    width: 110px;
+    background-color: rgb(243, 226, 206);
+}
